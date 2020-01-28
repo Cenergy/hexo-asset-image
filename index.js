@@ -53,7 +53,7 @@ hexo.extend.filter.register('after_post_render', function(data) {
                             // link = posts/
                             // abbrlink = d6d2f549
                             // src = d6d2f549/20190522103754.jpg
-                            $(this).attr('src', root + link + src);
+                            $(this).attr('src', '/' + link + src);
                         } else {
                             // 使用 markdown 标准语法：![图片](title/20190522103754.jpg)
                             // 或者 typora 其中一个用法：![图片](20190522103754.jpg)
@@ -66,10 +66,10 @@ hexo.extend.filter.register('after_post_render', function(data) {
                             if (src.indexOf('/') > -1) {
                               src = src.substring(src.lastIndexOf('/') + 1);
                             }
-                            $(this).attr('src', root + link + abbrlink + '/' + src);
+                            $(this).attr('src','/' + link + abbrlink + '/' + src);
                         }
                     } else {
-                        $(this).attr('src', root + link + src);
+                        $(this).attr('src', '/' + link + src);
                     }
                 }
             });
