@@ -9,7 +9,7 @@ Give asset image in hexo a absolutely path automatically
 # Usege
 
 ```shell
-npm install https://github.com/foreveryang321/hexo-asset-image.git --save
+npm install https://github.com/Cenergy/hexo-asset-image.git --save
 ```
 
 # Example
